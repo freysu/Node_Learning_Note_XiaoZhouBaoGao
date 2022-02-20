@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>这是我的第一个模板文件</h1>
+    <h1>{{title}}</h1>
+    <!-- 向后台发送数据时用Post -->
+    <form action="/login" method="POST">
+        <!-- input name：定义表单提交的数据字段 -->
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
+        <!-- 当表单的method不是post的时候，显示点击按钮后跳转到http://127.0.0.1:3000/login?username=填写的用户名&password=填写的密码 -->
+        <input type="submit" value="Login">
+    </form>
+</body>
+
+</html>

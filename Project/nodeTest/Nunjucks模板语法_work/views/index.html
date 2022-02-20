@@ -1,0 +1,31 @@
+{% extends "./views/layout.html" %}
+
+{% block content %}
+    <h2>{{docListTitle}}</h2>
+    <ul class="docList">
+        {% for doc in docList %}
+        <li>
+            {{doc}}
+        </li>
+        {% endfor %}
+    </ul>
+    <h2>{{picListTitle}}</h2>
+    <ul class="picList">
+        {% for pic in picList %}
+        <li>
+            {{pic}}
+        </li>
+        {% endfor %}
+    </ul>
+    <h2>{{vidListTitle}}</h2>
+    <ul class="vidList">
+        {% for vid in vidList %}
+        <li>
+            {{vid}}
+        </li>
+        {% endfor %}
+    </ul>
+    </div>
+{% endblock %}
+
+
